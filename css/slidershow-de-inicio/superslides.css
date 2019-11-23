@@ -1,0 +1,100 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.description{
+ width: 100%;
+ color: #f8f8f8;
+ text-align: center;
+ font-family: Arial;
+ font-size: 17px;
+ padding: 5px 15px;
+ background: rgba(0, 0, 0, 0.5);
+ position: absolute;
+ top: 45%;
+ left: 50%;
+ transform: translateX(-50%) translateY(-50%)
+}
+
+.description h1{
+ font-family: Agency FB;
+ font-size: 2em;
+ padding-bottom: 15px;
+}
+
+#slides .slides-container {
+ display: none;
+}
+#slides .scrollable {
+ position: relative;
+ top: 0;
+ left: 0;
+ -webkit-overflow-scrolling: touch;
+ height: 100%;
+}
+#slides .scrollable:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+.slides-navigation {
+ margin: 0 auto;
+ position: absolute;
+ z-index: 3;
+ top: 46%;
+ width: 100%;
+}
+.slides-navigation a {
+ position: absolute;
+ display: block;
+ font-size: 30px;
+ text-decoration: none;
+ color: #f8f8f8;
+}
+
+.slides-navigation span:hover{
+ background: rgba(0, 0, 0, 0.58);
+ border-radius: 50px;
+}
+
+.slides-navigation a.prev {
+ left: 0;
+ margin: 10px;
+}
+.slides-navigation a.next {
+ right: 0;
+ margin: 10px;
+}
+
+.slides-pagination {
+ position: absolute;
+ z-index: 3;
+ bottom: 0;
+ text-align: center;
+ width: 100%;
+}
+.slides-pagination a {
+ border: 2px solid #00ebff;
+ border-radius: 15px;
+ background-color: #fff;
+ width: 15px;
+ height: 15px;
+ display: inline-block;
+ margin: 2px;
+}
+.slides-pagination a.current {
+ background: #222;
+}
+
+@media screen and (max-width:810px){
+ .description {
+font-size: 17px;
+ }
+ 
+ .description h1{
+  font-size: 2em;
+ }
+}

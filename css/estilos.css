@@ -1,0 +1,541 @@
+*{
+ padding: 0;
+ margin: 0;
+ -webkit-box-sizing:  border-box;
+ -moz-box-sizing: border-box ;
+ box-sizing:  border-box;
+}
+
+.hr{
+ margin: 15px 0px;
+}
+
+.hr img{
+ width: 100%;
+ height: 2px;
+ max-height: 2px;
+}
+
+
+body{
+ font-size: 17px;
+ background: #ffffff;
+ font-family: Arial;
+ color: #383838;
+}
+
+.espacio-header{
+ margin-top: 40px;
+}
+
+header{
+ color: #fff;
+ width: 100%;
+ padding: 0px;
+ position: fixed;
+ top: 0;
+ z-index: 999;
+ /*border-top: 2px solid yellow;*/
+}
+
+header a{
+ color: #fff;
+ text-decoration: none;
+}
+
+header .btn-menu{
+ color: #fff;
+ font-size: 25px;
+}
+
+.btn-menu{
+ font-family: Agency FB;
+ display: none;
+ color: #fff;
+ text-decoration: none;
+ font-size: 1em;
+}
+
+.logo-menu{
+ background: #00235c;
+}
+
+.logo-menu span{
+ padding-left: 7px;
+}
+
+.logo {
+ font-family: Agency FB;
+ font-size: em;
+}
+
+.logo h1{
+ font-size: 2em;
+}
+
+.logo-menu .menu a{
+ display: inline-block;
+ padding: 20px;
+} 
+
+.logo-menu .menu a:hover{
+ border-bottom: 4px solid yellow;
+ padding-bottom: 16px;
+}
+
+.main {
+ margin: 40px 0px;
+ padding: 0px;
+}
+
+.main .imagenes{
+ margin-bottom: 20px;
+}
+
+.main .imagenes img{
+ max-width: 250px;
+ width: 100%;
+ vertical-align: top;
+}
+
+.container .contenido-index{
+ margin-bottom: 0px;
+ font-family: Arial;
+ color: #383838;  
+}
+
+.container .contenido-index h1{
+ font-family: Agency FB;
+ font-size: 2.5em;
+ text-align: left;
+ color: #383838;
+ margin: 15px 0px;
+}
+
+.container .contenido-index p{
+ padding: 7px;
+ text-align: justify;
+}
+
+.slides-navigation {
+ margin: 0 auto;
+ position: absolute;
+ z-index: 3;
+ top: 46%;
+ width: 100%;
+}
+.slides-navigation a {
+ position: absolute;
+ display: block;
+ font-size: 25px;
+ text-decoration: none;
+ color: rgba(255, 255, 255, 0.4);
+}
+
+.slides-navigation a.prev {
+ left: 0;
+ margin: 10px;
+}
+.slides-navigation a.next {
+ right: 0;
+ margin: 10px;
+}
+
+.sidebar1-derecha{
+ display: block;
+ margin: 15px 0px;
+ margin-left: 20px;
+ width: 100%;
+ height: 100%;
+}
+
+.sidebar1-derecha img{
+ max-width: 350px;
+ border: 1px solid #006cff;
+}
+
+@media screen and (max-width: 1150px) {
+ .sidebar1-derecha{
+  display: block;
+  margin: 15px 0px;
+  width: 100%;
+  height: 100%;
+ }
+
+ .sidebar1-derecha img{
+  max-width: 320px;
+  border: 1px solid #006cff;
+ }
+}
+
+/*ESTILO PARA TEXTO Y PARRAFOS*/
+/*CONTAINER TEXTO*/
+.container-texto{
+ margin-top: 20px;
+ padding: 40px;
+}
+
+.container-texto h1{
+ font-family: Agency FB;
+ font-size: 2.5em;
+ margin-bottom: 15px;
+}
+
+.container-texto p{
+ padding: 7px;
+}
+
+/*TABLA - CSS*/
+.tabla-servicios .paquetes-de-diseno h1{
+ font-family: Agency FB;
+ font-size: 2em;
+ color: #383838;
+ margin-top: 0px;
+ padding-top: 0px;
+ padding-bottom: 5px;
+}
+
+.tabla-servicios {
+ margin: 0px 20px;
+}
+
+.tabla-individual{
+ margin: 15px 5px;
+ margin-bottom: 0px;
+ color: #383838; /*#f8f8f8;*/
+ border: 1px solid #00235C;
+ height: 450px;
+ min-height: 450px;
+ max-height: 450px;
+}
+
+.tabla-de-planes .titulo-tabla{
+ padding: 20px 0px;
+}
+
+.tabla-de-planes .titulo-tabla h2{
+ padding: 0px 50px;
+ margin-bottom: 5px;
+}
+
+.tabla-de-planes .titulo-tabla span{
+ font-size: 40px;
+}
+
+.servicios-tabla{
+ padding: 0px 10px;
+}
+
+.descripcion-plan {
+ padding-bottom: 35px;
+}
+
+.tabla-de-planes .servicios-tabla li{
+ margin: 5px 15px;
+ font-size: 17px;
+}
+
+.boton-contratar-servicio {
+ padding: 4px;
+ margin: 0px 5px;
+ color: #fff;
+ background: #00368e;
+ font-size: 30px;
+ font-family: Agency FB;
+ border: 3px #00368e solid;
+ /*Efecto hover al pasar el cursor*/
+ cursor:pointer; 
+ overflow:hidden;
+ text-align: center;
+}
+
+.boton-contratar-servicio:hover {
+ /*background: #00368e;*/
+ color: #fff;
+ border: 3px #00a7ff solid;
+ padding: 4px;
+}
+
+.boton-efecto-slide-left{
+ color:rgba(0,0,0, 0) !important; 
+ transition: all .3s ease;
+}
+
+.boton-efecto-slide-left{
+ text-shadow:0 0 0  #fff, 400px 0 0 #000;
+}
+
+.boton-efecto-slide-left:hover{ 
+ text-shadow: -400px 0 0 #fff, 0 0 0 #fff;
+}
+
+.boton-contratar-servicio span{
+ padding-right: 5px;
+}
+
+.imagen-parallax{
+ background-image: url(../img/imagenes-parallax/img1.png);
+ clear: both;
+ width: 100%;  
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ margin: 75px 0px;
+ margin-bottom: 0px;
+}
+
+.descripcion-imagen-parallax{
+ padding: 100px 50px;
+ background-color: rgba(0, 0, 0, 0.3);
+}
+
+.descripcion-imagen-parallax h1{
+ color: #fff;
+ font-family: Agency FB;
+ font-size: 2.5em;
+ margin-bottom: 25px;
+}
+
+.descripcion-imagen-parallax {
+ color: #fff;
+ font-size: 1.02em;
+}
+
+.habilidades-web-container {
+ background: #cceefd;
+ color: #383838;
+ margin: 0px 0px;
+}
+
+.titulo-habilidades-container{
+ padding: 0px 50px;
+}
+
+.line-decoration-left {
+ border: 1px solid black;
+ padding-left: 20px;
+}
+
+.habilidades-web-container .titulo-habilidades  h1{
+ padding: 40px 0px;
+ font-family: Agency FB;
+}
+
+.line-decoration-rigth {
+ border: 1px solid black;
+ padding-left: 20px;
+}
+
+.contenido-habilidades-container{
+ margin: 0px 20px;
+ margin-bottom: 0px;
+}
+
+.contenido-habilidades {
+ text-align: center;
+ padding: 0px 15px;
+ padding-bottom: 25px;
+}
+
+.contenido-habilidades img{
+ padding-bottom: 20px;
+}
+
+.contenido-habilidades h1{
+ font-family: Agency FB;
+ font-size: 30px;
+ padding-bottom: 15px;
+}
+
+.pagina-web-responsive{
+ background: #fff2d8; /*#f7e8cb*/
+ padding: 25px 0px;
+}
+
+.pagina-web-responsive h1{
+ color: #383838;
+ font-family: Agency FB;
+ padding: 0px;
+ padding-bottom: 15px;
+}
+
+.pagina-web-responsive p{
+ font-size: 17px;
+ padding: 10px 50px;
+ color: #383838;
+}
+
+.pagina-web-responsive img{
+ padding-top: 30px;
+ width: 100%;
+ max-width: 750px;
+ max-height: 750px;
+}
+
+footer{
+ background: #00171f;
+ color: #a5a5a5;
+ padding: 20px 0px;
+ font-size: 14px;
+}
+
+.footer-informacion p{
+ padding: 8px 0px;
+ text-align: center;
+}
+
+.footer-informacion .infoAqui{
+	color: #00b1ff;
+}
+
+.footer-informacion-copyright{
+ padding-top: 15px;
+}
+
+.cookies{
+ text-align: justify;
+}
+
+
+@media screen and (max-width: 810px) {
+ .logo-footer {
+  margin: 0px 10px;
+  margin-top: 30px;
+ }  
+
+ .pagina-web-responsive p{
+  font-size: 17px;
+  padding: 10px;
+ }
+}
+
+@media screen and (max-width: 797px){
+ .espacio-header{
+  margin-top: 78px;
+ } 
+ .logo h1{
+  text-align: center;
+  padding: 5px;
+  margin: 0px;
+ }
+
+ .btn-menu{
+  display: block;
+  width: 100%;  
+ }
+
+ .logo-menu .menu a{
+  padding: 5px 20px;
+ }
+
+ .logo-menu .menu a:hover{
+  border-bottom: 0px;
+  padding-bottom: 0px;
+ }
+
+ .descripcion-imagen-parallax{
+  padding: 100px 20px;
+ }
+
+ .descripcion-imagen-parallax p{
+  font-size: 17px;
+ }
+
+ .line-decoration-left {
+  display: none;
+ }
+ .line-decoration-rigth {
+  display: none;
+ }
+ .titulo-habilidades-container{
+  padding: 0px 0px;
+ }
+
+ footer .nav a:hover{
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+  padding-bottom: 20px;
+ }
+}
+
+@media screen and (max-width: 370px) {
+ .sidebar1-derecha{
+  display: block;
+  margin: 25px 0px;
+  margin-left: 0px;
+  width: 100%;
+  height: 100%;
+ }
+ .sidebar1-derecha img{
+  max-width: 270px;
+  border: 1px solid #006cff;
+ }
+
+ .tabla-servicios {
+  margin: 0px 0px;
+ }
+
+ .logo-menu .menu a{
+  padding: 10px 20px;
+  display: block;
+  text-align: left;
+ }  
+
+ .logo-menu .menu a:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

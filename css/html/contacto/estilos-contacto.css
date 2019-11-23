@@ -1,0 +1,179 @@
+.tabla-servicios {
+ margin-bottom: 60px;
+}
+
+.hr{
+ margin-bottom: 40px;
+}
+
+.formulario-estilos {
+ width: 100%;
+ max-width: 550px;
+}
+
+form{
+ font-family: Arial;
+ font-size: 17px;
+ width: 100%;
+ margin: 20px 0px;
+ margin-bottom: 40px;
+ padding: 20px;
+ background: #f7f7f7;
+ overflow: hidden;
+ box-shadow:  0 0 3px grey;
+ border-top: 4px solid #00235c;
+}
+
+::placeholder{
+ font-family: Arial;
+ font-size: 17px;
+}
+/* Internet Explorer 10+ */
+:-ms-input-placeholder { 
+ font-family: Arial;
+ font-size: 17px; 
+} 
+/* WebKit y Google Chromer */
+::-webkit-input-placeholder {
+ font-family: Arial;
+ font-size: 17px;
+} 
+/* Firefox 19+ */
+::-moz-placeholder {
+ font-family: Arial;
+ font-size: 17px; 
+} 
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+ font-family: Arial;
+ border: 1px solid #00235c;
+ border-radius: 2px;
+ padding: 16px;
+ width: 100%;
+ display: block;
+ margin-top: 20px;
+ color: #141938;
+ font-size: 17px;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+ border: 2px solid #00a2ea;
+ padding: 15px;
+}
+
+form textarea{
+ max-width: 100%;
+ min-width: 100%;
+ max-height: 300px;
+ min-height: 150px;
+}
+
+/*ESTILOS DE CODIGO DE SEGURIDAD*/
+#imagenSeguridad{
+ margin-top: 20px;
+ width: 100px;
+}
+
+.alert-formulario{
+ font-size: 14px;
+ color: #fff;
+ border-radius: 5px;
+ padding: 1em;
+ margin: 20px 0px 0px 0px;
+}
+
+/*Error mediante JavaScript*/
+.msjError{
+ border-radius: 3px;
+ display: none;
+ color: #a94442;	
+ background: #f2dede;
+ border: 1px solid #a94442;
+ padding: 10px 15px;
+ margin-top: 8px;
+}
+
+/*Error mediante PHP*/
+.error{
+ color: #a94442;	
+ background: #f2dede;
+ border: 1px solid #a94442;
+}
+/*Error mediante PHP*/
+.sucess{
+ color: #fff;
+ background: #4CAF50;
+ border: 1px solid #006404;
+}
+
+.boton-enviar, from input[type="submit"]{
+ margin-top: 20px;
+ padding: 15px;
+ color: #fff;
+ background: #00235c;
+ font-size: 1em;
+ border-radius: 2px;
+ border: none;
+ cursor: pointer;
+ float: right;
+}
+
+.boton-enviar:hover, from input[type="submit"]:hover {
+ background: #00a2ea;
+}
+
+.fomulario-container img{
+ width: 100%;
+}
+
+.contacto-autor{
+ background: #CCEEFD;
+ padding: 20px 50px;
+}
+
+.texto-autor h1{
+ font-family: Agency FB;
+ padding-bottom: 20px;
+}
+
+.foto-autor img{
+ width: 100%;
+ max-width: 150px;
+ height: 100%;
+ max-height: 150px;
+ border-radius: 50%;
+ border: 1px ridge #00e1ff;
+ background-color: #00e1ff;
+}
+
+@media screen and (max-width: 1030px) {
+ .fomulario-container img{
+  width: 100%;
+  max-width: 500px;
+ }
+
+ .contacto-autor {
+  margin-top: 40px;
+ }
+}
+
+@media screen and (max-width: 800px) {
+ .formulario-texto{
+  margin-top: 0px;
+  padding: 30px 0px;
+ }
+}
+
+@media screen and (max-width: 767px){
+ .contacto-autor {
+	padding: 20px 15px;
+}
+ 
+ .foto-autor {
+  margin-top: 20px;
+ }
+}

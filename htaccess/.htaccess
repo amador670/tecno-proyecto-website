@@ -1,0 +1,52 @@
+#añadir todos los www
+RewriteCond %{HTTP_HOST} !^$
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTPS}s ^on(s)|
+RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+#prohibir archivos ocultos como los que empiezan por punto
+RewriteCond %{SCRIPT_FILENAME} -d [OR]
+RewriteCond %{SCRIPT_FILENAME} -f
+RewriteRule "(^|/)\." - [F]
+#proteger .htaccess
+RedirectMatch 404 /\..*$
+#pohibir archivos sensibles
+<FilesMatch "(\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|swp)|~)$">
+Order allow,deny
+Deny from all
+Satisfy All
+</FilesMatch>
+#evitar abrir las carpetas
+Options All -Indexes
+#obligar a formato 
+AddDefaultCharset utf-8
+#proteger archivo htaccess
+<files .htaccess>
+Order allow,deny
+Deny from all
+</files>
+#paginas de errores personalizadas
+ErrorDocument 400 /errores/error-al-cargar-pagina-web.html
+ErrorDocument 401 /errores/error-al-cargar-pagina-web.html
+ErrorDocument 403 /errores/error-al-cargar-pagina-web.html
+ErrorDocument 404 /errores/error-al-cargar-pagina-web.html
+ErrorDocument 500 /errores/error-al-cargar-pagina-web.html
+#comprimir archivos
+<IfModule mod_filter.c>
+AddOutputFilterByType DEFLATE application/atom+xml \
+application/javascript \
+application/json \
+application/rss+xml \
+application/vnd.ms-fontobject \
+application/x-font-ttf \
+application/x-web-app-manifest+json \
+application/xhtml+xml \
+application/xml \
+font/opentype \
+image/svg+xml \
+image/x-icon \
+text/css \
+text/html \
+text/plain \
+text/x-component \
+text/xml
+</IfModule>
